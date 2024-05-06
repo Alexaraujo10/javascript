@@ -19,12 +19,12 @@
    <script>
 
    function calcular(){
-   var  txtn = document.getElementById('txtnaci')
+    var  txtn = document.getElementById('txtnaci')
    var res = document.getElementById('res')
    var  nac  = String(txtn.value)
    res.innerText = `Sua nacionalidade é ${nac}`
 
-if (nac != Brasil ){
+if (nac != brasil){
     res.innerText = 'Você é Estrangeiro'  
 } else{
     res.innerText = 'Você é Brasileiro'
