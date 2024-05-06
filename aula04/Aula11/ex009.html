@@ -7,32 +7,28 @@
 </head>
 <body>
     
-   <h1>Descubra Se voce é estrangeiro ou não</h1>
+   
+    <h1>Descubra Se Você é Estrangeiro ou Não</h1>
 
-   Sua nacionalidade é: <input type="text" name="txtnac" id="txtnaci">
-
-    <input type="button" value="Verificar" onclick="calcular()">
+    <label for="txtnac">Sua nacionalidade é:</label>
+    <input type="text" name="txtnac" id="txtnac">
+    <button onclick="calcular()">Verificar</button>
 
     <div id="res"></div>
 
+    <script>
+        function calcular() {
+            var txtn = document.getElementById('txtnac');
+            var res = document.getElementById('res');
+            var nac = txtn.value.toLowerCase();
+            res.innerText = `Sua nacionalidade é ${nac}`;
 
-   <script>
-
-   function calcular(){
-    var  txtn = document.getElementById('txtnaci')
-   var res = document.getElementById('res')
-   var  nac  = String(txtn.value)
-   res.innerText = `Sua nacionalidade é ${nac}`
-
-if (nac != brasil){
-    res.innerText = 'Você é Estrangeiro'  
-} else{
-    res.innerText = 'Você é Brasileiro'
-}
-    
-     
-   }
-
-   </script>
+            if (nac !== 'brasil') {
+                res.innerText += ' - Você é Estrangeiro';
+            } else {
+                res.innerText += ' - Você é Brasileiro';
+            }
+        }
+    </script>
 </body>
 </html>
