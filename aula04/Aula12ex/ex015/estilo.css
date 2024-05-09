@@ -24,3 +24,8 @@ color: white;
 text-align: center;
 font-style: italic;
 }
+#foto{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
