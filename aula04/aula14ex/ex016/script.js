@@ -11,7 +11,7 @@ function contar(){
         res.innerHTML='Impossivel contar!'
         alert('[ERRO] Esta faltando dados!')
 
-     //começando a ccontar
+     //começando a contar
     } else {
        res.innerHTML = 'Contando: <br> '
        let i = Number(ini.value)
