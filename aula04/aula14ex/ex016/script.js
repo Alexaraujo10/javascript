@@ -5,7 +5,7 @@ function contar(){
     let res = document.getElementById('res')
     
 
-
+    
     //validação de dados
     if (ini.value.length == 0 || fim.value.length ==0  || passo.value.length ==0){
         res.innerHTML='Impossivel contar!'
