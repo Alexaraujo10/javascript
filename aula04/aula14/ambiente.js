@@ -3,3 +3,4 @@ console.log('Vai começar')
    console.log(c)
     }
     console.log('Fim')
+    
